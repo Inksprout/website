@@ -1,0 +1,156 @@
+/* smaller screen */
+@media screen and (max-width: 700px) {
+    .blurb  {
+        display: flex;
+        flex-direction: column;
+        grid-area: 3 / 2 / 4 / 4;
+        text-align: center;
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .line { 
+        grid-area: 2 / 2 / 3 / 4; 
+        width: 90%;
+        border: none;
+        height: 1px;
+        background-color:  #E5D3FF;
+    }
+
+    .heading {
+        grid-area: 1 / 2 / 2 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        margin: 0px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .aboutContainer {
+        display: grid;
+        grid-template-columns: 1fr 50% 1fr;
+        grid-template-rows: 100px 5px 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: black;
+    }
+}
+
+/* larger screen */
+@media screen and (min-width: 700px) {
+    .blurb {
+        display: flex;
+        flex-direction: column;
+        grid-area: 3 / 2 / 4 / 3;
+        text-align: center;
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .line { 
+        grid-area: 2 / 2 / 3 / 3; 
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color:  #E5D3FF;
+    }
+
+    .heading {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 62px;
+        margin: 0px;
+        color: #E5D3FF;
+    }
+
+    .aboutContainer {
+        display: grid;
+        grid-template-columns: 1fr 50% 1fr;
+        grid-template-rows: 200px 5px 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: white;
+        margin-bottom: 100px;
+    }
+}
+
+.ribbonWrapper {
+    display: flex;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    min-width: 20%;
+    justify-content: flex-end;
+    z-index: -1;
+}
+
+@keyframes ribbon1 {
+    14%   {background-color: #E5D3FF}
+    19% {background-color: #FD9765}
+    45% {background-color: #FD9765}
+    50% {background-color: #E1319D}
+    76% {background-color: #E1319D}
+    81% {background-color: #E5D3FF}
+    86% {background-color: #E5D3FF}
+}
+
+@keyframes ribbon2 {
+    14% {background-color: #FD9765}
+    19% {background-color: #E1319D}
+    45% {background-color: #E1319D}
+    50% {background-color: #E5D3FF}
+    76% {background-color: #E5D3FF}
+    81% {background-color: #FD9765}
+    86% {background-color: #FD9765}
+}
+
+@keyframes ribbon3 {
+    14% {background-color: #E1319D}
+    19% {background-color: #E5D3FF}
+    45% {background-color: #E5D3FF}
+    50% {background-color: #FD9765}
+    76% {background-color: #FD9765}
+    81% {background-color: #E1319D}
+    86% {background-color: #E1319D}
+}
+
+.ribbon1 {
+    width: 10%;
+    height: 100vh;
+    background-color: #E5D3FF;
+    display: block;
+    animation-name: ribbon1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  .ribbon2 {
+    width: 10%;
+    height: 100vh;
+    background-color: #FD9765;
+    display: block;
+    animation-name: ribbon2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  .ribbon3 {
+    width: 10%;
+    height: 100vh;
+    background-color: #E1319D;
+    display: flex;
+    animation-name: ribbon3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
