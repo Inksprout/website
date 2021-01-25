@@ -1,12 +1,18 @@
-import React from 'react';
+import React from "react"
+import styles from "./stickyNav.module.css"
 
-export default function StickyNav(){
+export default function StickyNav() {
   return (
-    <div>
+    <ul className={styles.nav}>
+      <li>
         <a href="#intro">Intro</a>
-        <a href="#about">About</a>
+      </li>
+      <li>
         <a href="#work">Work</a>
+      </li>
+      <li>
         <a href="#contact">Contact</a>
-    </div>
-  );
+      </li>
+    </ul>
+  )
 }

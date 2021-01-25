@@ -1,4 +1,5 @@
 html {
-    background-color: #2B437B;
-    color: white;
+  background-color: #2b437b;
+  color: white;
+  scroll-behavior: smooth;
 }

@@ -1,4 +1,5 @@
 import Typography from "typography"
+import "@openfonts/ibm-plex-mono_all"
 
 const typography = new Typography({
   baseFontSize: "18px",
@@ -11,7 +12,7 @@ const typography = new Typography({
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Courier", "serif"],
+  bodyFontFamily: ["IBM Plex Mono", "arial"],
 })
 
 export default typography

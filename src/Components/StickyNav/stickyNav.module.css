@@ -1,0 +1,35 @@
+.nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 14%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e2329e;
+}
+
+/* selected link */
+a:active {
+  color: #e2329e;
+}
