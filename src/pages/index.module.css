@@ -10,7 +10,7 @@
     width: 100%;
     border: none;
     height: 1px;
-    background-color: #e5d3ff;
+    background-color: #2B437B;
     margin-top: 20px;
   }
 
@@ -18,12 +18,13 @@
     grid-column-start: 2;
     grid-column-end: 4;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     font-size: 32px;
     margin: 0px;
-    text-align: center;
+    text-align: left;
     width: 90%;
+    margin-bottom: 20px;
+    margin-top: 80px
   }
 
   .aboutContainer {
@@ -31,8 +32,8 @@
     grid-template-columns: 1fr 50% 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    color: white;
-    text-align: center;
+    color: #2B437B;
+    text-align: left;
     font-size: 16px;
     width: 90%;
   }
@@ -47,7 +48,7 @@
     grid-template-columns: 1fr 50% 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    color: white;
+    color: #2B437B;
     text-align: center;
     font-size: 16px;
     width: 90%;
@@ -56,6 +57,10 @@
   .contactContent {
     grid-column-start: 2;
     grid-column-end: 4;
+  }
+
+  .anchor {
+    padding-top: 40px; margin-top: -40px;
   }
 }
 
@@ -86,16 +91,19 @@
     text-align: center;
     font-size: 62px;
     margin-top: 40px;
-    color: #e5d3ff;
+    color: #2B437B;
+    max-height: 200px;
   }
 
   .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: 150px 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    color: white;
+    color: #2B437B;
     margin-bottom: 100px;
+    min-height: 100vh;
   }
 
   .aboutContent {
@@ -109,7 +117,7 @@
     grid-template-columns: 1fr 50% 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    color: white;
+    color: #2B437B;
     margin-bottom: 100px;
     grid-row-start: 4;
     grid-row-end: 6;
@@ -233,4 +241,31 @@
   animation-name: ribbon3;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2B437B;
+}
+
+/* visited link */
+a:visited {
+  color: #2B437B;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e2329e;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #e2329e;
+  text-decoration: underline;
 }
