@@ -1,17 +1,18 @@
 import React from "react"
 import styles from "./stickyNav.module.css"
+import { Link } from "gatsby"
 
 export default function StickyNav() {
   return (
     <ul className={styles.nav}>
       <li>
-        <a href="#intro">Intro</a>
+        <Link to="/#intro">Intro</Link>
       </li>
       <li>
-        <a href="#work">Work</a>
+      <Link to="/#work">Work</Link>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+      <Link to="/#contact">Contact</Link>
       </li>
     </ul>
   )

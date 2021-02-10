@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <div>
       <StickyNav />
+            <span class="anchor" id="intro"></span>
+
       <section id="intro">
         <div className={styles.aboutContainer}>
           <h1 className={styles.heading}>Candy Goodison</h1>
@@ -29,9 +31,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <span class="anchor" id="work"></span>
       <section>
         <div className={styles.aboutContainer}>
-          <h1 className={styles.heading}>My Work</h1>
+          <h1 className={styles.heading}>My Work</h1 >
 
           <div className={styles.aboutContent}>
             <hr className={styles.line} />
@@ -102,9 +105,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <span class="anchor" id="contact"></span>
       <section>
         <div className={styles.contactContainer}>
-          <h1 className={styles.heading} id="work">
+          <h1 className={styles.heading}>
             Contact Me
           </h1>
 
