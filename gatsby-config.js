@@ -14,5 +14,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        name: 'gatsby-starter-default',
+        short_name: 'started',
+        start_url: '/',
+        icon: 'src/images/favison.png.'
+      },
+    },
   ],
 }

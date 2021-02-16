@@ -4,10 +4,15 @@ import { IconContext } from "react-icons";
 
 import styles from "./index.module.css"
 import StickyNav from "../Components/StickyNav/StickyNav"
+import favicon from '../images/favicon.png'
+import Helmet from 'react-helmet'
 
 export default function Home() {
   return (
     <div>
+          <Helmet>
+      <link rel="icon" href={favicon} />
+    </Helmet>
       <StickyNav />
       <>
       <span className="anchor" id="intro"></span>
