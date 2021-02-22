@@ -269,3 +269,14 @@ a:active {
   color: #e2329e;
   text-decoration: underline;
 }
+
+.cat {
+  stroke: #2B437B;
+  width: 200px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.svg-text {
+  fill:blueviolet;
+}

@@ -92,8 +92,10 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+This project is deployed to surge. 
+To deploy first built the site
+```gatsby build```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+next run the command to deploy the site to the url
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+```surge public/ candygoodison.com```

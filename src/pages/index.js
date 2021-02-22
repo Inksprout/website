@@ -1,12 +1,12 @@
 import React from "react"
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaCodepen } from 'react-icons/fa';
 import { IconContext } from "react-icons";
 import Helmet from 'react-helmet'
 
 import styles from "./index.module.css"
 import StickyNav from "../Components/StickyNav/StickyNav"
 import favicon from '../images/favicon.png'
-
+import Cat from '../images/svg/cat.svg'
 
 export default function Home() {
   return (
@@ -135,6 +135,19 @@ export default function Home() {
                 </a>
 
               </p>
+              <p>
+                <a href="https://codepen.io/inksprout/pens/showcase">
+                  <span className={styles.socialLink}>
+                    <IconContext.Provider value={{ style: { marginRight: "10px" } }}>
+                      <FaCodepen size="23px" />
+                    </IconContext.Provider>
+                      My Codepen
+                  </span>
+                </a>
+              </p>
+              <div className={styles.cat}>
+                <Cat />
+              </div>
             </div>
           </div>
         </section>
